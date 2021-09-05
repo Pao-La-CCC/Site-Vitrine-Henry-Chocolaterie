@@ -1,0 +1,61 @@
+[
+    {   
+        "name": "Le damier délicieux",
+        "image": "https://images.unsplash.com/photo-1566760376154-9166bc788f56?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEyfHxjaG9jb2xhdGUlMjBiYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+        "description": "Assortissement des 3 chocolats intenses et élégants",
+        "quantité": 20,
+        "prix": 15
+    },
+    {  
+        "name": "Le grand dôme",
+        "image": "https://images.unsplash.com/photo-1541779680529-138e9bf8d659?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+        "description": "Patisserie en forme de dôme aux chocolats",
+        "quantité": 20,
+        "prix": 30
+    },
+    {  
+        "name": "Coffret chocolat au lait",
+        "image": "https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGNob2NvbGF0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=60",
+        "description": "Grand coffret chocolat au lait praliné, amande et noisette",
+        "quantité": 20,
+        "prix": 20
+    },
+    {  
+        "name": "Macaron chocolat Breton",
+        "image": "https://images.unsplash.com/photo-1517400847543-fd27a32c8d12?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNob2NvbGF0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=60",
+        "description": "Macaron parfum chocolat et caramel beurre salé",
+        "quantité": 20,
+        "prix": 10
+    },
+    {  
+        "name": "Grand coffret chocolat automnal",
+        "image": "https://images.unsplash.com/photo-1609074458316-3e282975bb1e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hvY29sYXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+        "description": "Grand coffreux savoureux,agrémenté de fruits secs",
+        "quantité": 20,
+        "prix": 20
+    },
+    {  "name": "Cookies",
+        "image": "https://images.unsplash.com/photo-1625876981820-be17a6807189?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGNvb2tpZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+        "description": "Cookies aux éclats de chocolat savoureux",
+        "quantité": 20,
+        "prix": 10
+    },
+    {  
+        "name": "Dragées fruités",
+        "image": "https://images.unsplash.com/photo-1581798269145-7512508289b9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2FuZHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+        "description": "Dragées colorées aux parfums fruités et délicatement accidulés",
+        "quantité": 20,
+        "prix": 10
+    },
+    {  
+        "name": "Nostalgie",
+        "image": "https://images.unsplash.com/photo-1588756164640-a9f10546e1b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+        "description": "Friandises fruitées travaillées selon les methodes de confections traditionnelles",
+        "quantité": 20,
+        "prix": 10
+    }
+  
+
+]
+
+
