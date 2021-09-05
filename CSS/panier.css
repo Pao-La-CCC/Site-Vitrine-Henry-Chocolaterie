@@ -1,0 +1,236 @@
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(68, 67, 67);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 65%;  
+}
+
+.logo{
+    padding: 1em;
+    font-family: 'Abril Fatface', serif;
+    color: coral;
+    font-size: 1.02em;    
+}
+
+
+ul{
+    width: 100%;
+    height: 3.20em;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+
+
+li {
+    list-style : none;
+    align-items :stretch;    
+}
+
+li:nth-of-type(1) {flex-grow: 6;}
+li:nth-of-type(2) {flex-grow: 1;}
+li:nth-of-type(3) {flex-grow: 1;}
+li:nth-of-type(4) {flex-grow: 1;}
+
+
+
+li a:hover {
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+li a {
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    display: block;  
+}
+
+/* MAIN */
+
+h2{
+    text-align: center;
+}
+
+main{
+    background-color: rgb(254, 245, 226);
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section{
+    /* background-color: darkgoldenrod; */
+    width: 65%;
+}
+
+.shopping-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    padding: 5%;
+    height: min-content;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "products price quantity total remove-articles"
+      "products price quantity total remove-articles";
+}
+
+.products { 
+    grid-area: products;
+    background-color: rgb(255, 251, 247); 
+}
+
+.price { 
+    grid-area: price;
+    background-color: rgb(255, 251, 247);
+
+}
+
+.quantity { 
+    grid-area: quantity;
+    background-color: rgb(255, 251, 247); 
+}
+
+.total { 
+    grid-area: total;
+    background-color: rgb(255, 251, 247);   
+}
+
+.remove-articles { 
+    grid-area: remove-articles;
+    background-color: rgb(255, 251, 247);
+    
+}
+
+/* style de tous les titles */   
+
+
+.title {
+    background-color: rgb(242, 227, 227);
+    padding: 0.3em ;
+    text-align: center;
+    border: 0.08em solid rgba(26, 26, 26, 0.6);
+}
+
+.info-zone-products{
+    border: 0.08em solid rgba(26, 26, 26, 0.6);
+}
+
+
+.info{
+    border: 0.08em solid rgba(26, 26, 26, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+p{
+    margin: 0 5px 0 5px;
+    height: 3em;    
+}
+
+.info button{
+    height: 3.6em;
+}
+
+
+
+
+
+/*  style coût total */
+
+
+.total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end    
+}
+
+.last-total-container{
+    width: 13em;
+    background-color: rgb(242, 227, 227);
+    border: 0.08em solid rgba(26, 26, 26, 0.6);    
+}
+
+.title-total-price{
+    border-bottom: 0.2em solid rgba(26, 26, 26, 0.6);
+    margin: 0 5px 0 5px;
+}
+
+
+.calcul-total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5px 0 5px;
+}
+
+.btnsubmit{
+    width: 100%;
+    background-color: black;
+    
+}
+
+button{
+    width: 100%;
+    padding: 0.4em;
+}
+
+
+.info div {
+    width: 100%;
+    border: 0.01em solid rgb(46, 46, 46);
+}
+
+.info div > *{
+    background-color: rgb(245, 240, 240);
+}
+
+
+.remove-all{
+    background-color: rgb(249, 128, 152);
+    display: inline-flex;
+    padding: 0.5em 0.7em;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: center;
+    height: 1.5em;
+}
+
+.remove-everything{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

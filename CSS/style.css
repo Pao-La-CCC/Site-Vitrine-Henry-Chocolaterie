@@ -1,1 +1,229 @@
 
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+   }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(68, 67, 67);
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+}
+
+.logo{
+    padding: 1em;
+    font-family: 'Abril Fatface', serif;
+    color: coral;
+    font-size: 1.02em;
+    
+}
+
+
+ul{
+    /* background-color: blue; */
+    width: 100%;
+    height: 3.20em;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+ 
+}
+
+
+
+li {
+    /* background-color: aqua; */
+    list-style : none;
+    /* padding: 1em; */
+    /* display: flex; */
+    align-items :stretch;
+    margin-left: 1.2px;
+    
+}
+
+li:nth-of-type(1) {flex-grow: 6;}
+li:nth-of-type(2) {flex-grow: 1;}
+li:nth-of-type(3) {flex-grow: 1;}
+li:nth-of-type(4) {flex-grow: 1;}
+
+
+
+li a:hover {
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+li a {
+
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+  }
+
+
+
+/* MAIN DÉBUT*/
+
+main{
+    background-color: rgb(252, 250, 248);
+}
+
+
+
+/* SECTION 1 : Banderole */
+
+.banderole {
+    background-image: 
+    url('https://images.unsplash.com/photo-1552404767-1dc7187feef6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+    height: 23em;
+    width: 100%;
+}
+
+
+.img-size-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+/* SECTION 2 : NOTRE HISTOIRE */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.container-ourhistory{
+    background-color: rgb(252, 250, 248);
+    padding: 1.6em;
+    width: 65%;
+    display: grid;
+    gap: 10px 10px; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+    "history-text-area  picture-area "
+    ;
+}
+
+
+.history-text-area {
+    grid-area: history-text-area ; 
+}
+
+.picture-area{
+    grid-area: picture-area;
+    /* background-color: blue ; */
+   
+}
+
+/* .history-text-area{
+    background-color: darkgrey;
+} */
+
+
+
+/* SECTION 3 : NOTRE UNIVERS*/
+
+
+
+
+.container-universe-area{
+    padding: 1.6em;
+    width: 65%;
+    background-color: rgb(252, 250, 248);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template:
+    "universe-text-area universe-text-area"
+    "img1 img2" ;
+}
+
+.universe-text-area {
+    grid-area : universe-text-area ;
+    text-align: center;
+    padding: 1.6em;
+}
+
+.img1{
+    grid-area : img1 ;
+}
+.img2 {
+    grid-area : img2;
+}
+
+
+
+
+/* SECTION 4 : ACTUELLEMENT EN MAGASIN*/
+
+
+.currently-container{
+    background-color: rgb(252, 250, 248);
+    padding: 1.6em;
+    width: 65%;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows:  1fr; 
+    gap: 20px 10px; 
+    grid-template-areas: 
+      "currently-text-title currently-text-title currently-text-title"
+      "currently-cards1 currently-cards2 currently-cards3"; 
+}
+.currently-text-title { 
+    grid-area: currently-text-title;
+    /* background-color: rgb(197, 196, 196) ; */
+    text-align: center;
+    padding: 1.6em;
+}
+.currently-cards1 { grid-area: currently-cards1; }
+.currently-cards2 { grid-area: currently-cards2; }
+.currently-cards3 { grid-area: currently-cards3; }
+
+
+
+.hcds-text{
+    background-color: rgb(197, 196, 196);
+    height: 4em;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hcds-text p {
+    margin: 0 0.5em 0 0.5em;
+}
+
+
+
+.home-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
