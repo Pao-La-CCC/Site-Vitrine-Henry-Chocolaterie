@@ -9,6 +9,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Archivo Black', sans-serif;
 }
 
+p{
+    font-size: 1.2em;
+}
+
+
 header{
     display: flex;
     justify-content: center;
@@ -17,20 +22,18 @@ header{
 nav {
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 80%;
 }
 
 .logo{
-    padding: 1em;
     font-family: 'Abril Fatface', serif;
     color: coral;
-    font-size: 1.02em;
-    
+    font-size: 1.6em;
+
 }
 
 
 ul{
-    /* background-color: blue; */
     width: 100%;
     height: 3.20em;
     margin: 0;
@@ -44,10 +47,7 @@ ul{
 
 
 li {
-    /* background-color: aqua; */
     list-style : none;
-    /* padding: 1em; */
-    /* display: flex; */
     align-items :stretch;
     margin-left: 1.2px;
     
@@ -118,7 +118,7 @@ section{
 .container-ourhistory{
     background-color: rgb(252, 250, 248);
     padding: 1.6em;
-    width: 65%;
+    width: 80%;
     display: grid;
     gap: 10px 10px; 
     grid-template-columns: 1fr 1fr; 
@@ -134,13 +134,9 @@ section{
 
 .picture-area{
     grid-area: picture-area;
-    /* background-color: blue ; */
-   
 }
 
-/* .history-text-area{
-    background-color: darkgrey;
-} */
+
 
 
 
@@ -151,7 +147,7 @@ section{
 
 .container-universe-area{
     padding: 1.6em;
-    width: 65%;
+    width: 80%;
     background-color: rgb(252, 250, 248);
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -164,8 +160,9 @@ section{
 
 .universe-text-area {
     grid-area : universe-text-area ;
-    text-align: center;
-    padding: 1.6em;
+    text-align: left;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
 }
 
 .img1{
@@ -176,29 +173,27 @@ section{
 }
 
 
-
-
 /* SECTION 4 : ACTUELLEMENT EN MAGASIN*/
 
 
 .currently-container{
     background-color: rgb(252, 250, 248);
     padding: 1.6em;
-    width: 65%;
+    width: 80%;
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows:  1fr; 
-    gap: 20px 10px; 
+    gap: 10px 10px; 
     grid-template-areas: 
       "currently-text-title currently-text-title currently-text-title"
       "currently-cards1 currently-cards2 currently-cards3"; 
 }
 .currently-text-title { 
     grid-area: currently-text-title;
-    /* background-color: rgb(197, 196, 196) ; */
-    text-align: center;
-    padding: 1.6em;
+    text-align: left;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
 }
 .currently-cards1 { grid-area: currently-cards1; }
 .currently-cards2 { grid-area: currently-cards2; }

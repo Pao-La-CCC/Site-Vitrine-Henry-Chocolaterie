@@ -3,6 +3,7 @@ body {
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-weight: 200;
+    background-color: rgb(252, 250, 248);
        
 }
 
@@ -18,14 +19,13 @@ header{
 nav {
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 80%;
 }
 
 .logo{
-    padding: 1em;
     font-family: 'Abril Fatface', serif;
     color: coral;
-    font-size: 1.02em;
+    font-size: 1.6em;
     
 }
 
@@ -66,14 +66,12 @@ li a {
     display: block;  
 }
 
- 
-
-/* MAIN */
-
-main{
-    background-color: rgb(252, 250, 248);
+p{
+    font-size: 1em;
 }
 
+
+/* MAIN */
 
 
 
@@ -81,16 +79,18 @@ main{
 /* Section info  */
 
 .info-area{
+    padding-top: 1.2em ;
+    padding-bottom: 1.2em;
     background-color: rgb(253, 232, 206);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.5em;
+
 }
 
 .info-container{
-    width: 55%;
+    width: 80%;
     
 }
 
@@ -98,46 +98,59 @@ main{
 /* Section cards-area   */
 
 .cards-area{
-    /* padding: 1em; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
- img{
-    width: 100%;
-} 
 
 .img-size-responsive {
     max-width: 100%;
     height: auto;
+} 
+
+
+
+.img-fit-div{
+    width: 300px;
+    height:200px;
 }
 
+.img-fit-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .container {
-    width: 65%;
+    padding-top: 2.5em;
+    width: 80%;
+    height: auto;
     display: grid;
     align-items: end;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.80fr 1fr 1fr;
-    gap: 20px 20px;
-    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 0px;
     grid-template-areas:
-      "store-cards1 store-cards2 store-cards3"
+      "store-cards1 store-cards2 store-cards3" 
       "store-cards4 store-cards5 store-cards6"
-      "store-cards7 store-cards8 .";
+      "store-cards7 store-cards8 ."     ;
 }
 
 
 
 .store-cards{
+    height: auto;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     box-shadow: 1px 1px 20px rgb(221, 216, 216);
 
 }
+
+
 
 .store-cards1 { grid-area: store-cards1;}
 
@@ -157,13 +170,14 @@ main{
 
 
 .cds-text{
+    height: 220px;
     background-color: rgb(247, 244, 244);
     width: 100%; 
 }
 
 .cds-text p:first-child {
     color: rgb(21, 21, 21);
-    text-align: center;
+    text-align: left;
     font-size: large;
 
 }
@@ -171,17 +185,16 @@ main{
 .cds-text p:nth-child(2) {
     color: rgb(156, 156, 156); 
     font-size: 0.95em; 
-    text-align: center;
+    text-align: left;
 }
 
 .cds-text p:nth-child(3)  {
     color: rgb(87, 152, 70); 
-    text-align: center;
+    text-align: left;
 }
 
 
 .divPara{
-    padding: 0.3em;
     display: flex;
     align-items: center;
     justify-content: center;
