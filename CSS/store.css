@@ -141,6 +141,7 @@ p{
 
 
 .store-cards{
+    margin: 0 auto;
     height: auto;
     width: 300px;
     display: flex;
