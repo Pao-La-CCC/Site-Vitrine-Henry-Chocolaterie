@@ -9,55 +9,38 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Archivo Black', sans-serif;
 }
 
-p{
-    font-size: 1.2em;
-}
+
 
 
 header{
-    display: flex;
-    justify-content: center;
     background-color: rgb(68, 67, 67);
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-}
-
-.logo{
-    font-family: 'Abril Fatface', serif;
-    color: coral;
-    font-size: 1.6em;
-
-}
-
-
-ul{
-    width: 100%;
-    height: 3.20em;
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    list-style: none;
- 
-}
-
-
-
-li {
-    list-style : none;
-    align-items :stretch;
-    margin-left: 1.2px;
+    margin: 0 auto;
     
 }
 
-li:nth-of-type(1) {flex-grow: 6;}
-li:nth-of-type(2) {flex-grow: 1;}
-li:nth-of-type(3) {flex-grow: 1;}
-li:nth-of-type(4) {flex-grow: 1;}
 
+
+.logo{
+    padding: 1em;
+    font-family: 'Abril Fatface', serif;
+    color: coral;
+    text-align: center;
+}
+
+ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    
+    list-style : none;
+    align-items :stretch;
+    
+    
+}
 
 
 li a:hover {
@@ -65,7 +48,6 @@ li a:hover {
     color: white;
 }
 li a {
-
     padding: 1em;
     color: white;
     text-decoration: none;
@@ -91,15 +73,11 @@ main{
     background-repeat: no-repeat;
     background-position: initial;
     background-size: cover;
-    height: 23em;
+    height: 15em;
     width: 100%;
 }
 
 
-.img-size-responsive {
-    max-width: 100%;
-    height: auto;
-  }
 
 
 
@@ -116,26 +94,34 @@ section{
 
 
 .container-ourhistory{
-    background-color: rgb(252, 250, 248);
-    padding: 1.6em;
-    width: 80%;
-    display: grid;
-    gap: 10px 10px; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-areas: 
-    "history-text-area  picture-area "
-    ;
+    width: 100%;
+    padding: 1.2em;
+
 }
 
 
 .history-text-area {
+    font-size: 1em;
     grid-area: history-text-area ; 
 }
 
+
 .picture-area{
     grid-area: picture-area;
+
+  
 }
 
+.img-prez{
+    height: 100%;
+    width: 100%;
+}
+
+
+.img-size-responsive {
+    max-width: 100%;
+    height: auto;
+  }
 
 
 
@@ -146,59 +132,20 @@ section{
 
 
 .container-universe-area{
-    padding: 1.6em;
-    width: 80%;
-    background-color: rgb(252, 250, 248);
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 10px 10px; 
-    grid-template:
-    "universe-text-area universe-text-area"
-    "img1 img2" ;
+    padding: 1.2em;
+    width: 100%;
 }
 
-.universe-text-area {
-    grid-area : universe-text-area ;
-    text-align: left;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-}
 
-.img1{
-    grid-area : img1 ;
-}
-.img2 {
-    grid-area : img2;
-}
 
 
 /* SECTION 4 : ACTUELLEMENT EN MAGASIN*/
 
 
 .currently-container{
-    background-color: rgb(252, 250, 248);
-    padding: 1.6em;
-    width: 80%;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows:  1fr; 
-    gap: 10px 10px; 
-    grid-template-areas: 
-      "currently-text-title currently-text-title currently-text-title"
-      "currently-cards1 currently-cards2 currently-cards3"; 
+    padding: 1.2em;
+    width: 100%;
 }
-.currently-text-title { 
-    grid-area: currently-text-title;
-    text-align: left;
-    padding-top: 1.6em;
-    padding-bottom: 1.6em;
-}
-.currently-cards1 { grid-area: currently-cards1; }
-.currently-cards2 { grid-area: currently-cards2; }
-.currently-cards3 { grid-area: currently-cards3; }
-
 
 
 .hcds-text{
@@ -216,9 +163,271 @@ section{
 }
 
 
-
 .home-cards{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+
+
+footer{
+    background-color: rgb(68, 67, 67);
+    height: 2em;
+    ;
+}
+
+
+
+
+
+@media only screen and (min-width: 650px) and (max-width : 1999px) {
+
+
+    
+    header{
+        background-color: rgb(68, 67, 67); 
+    }
+
+    nav{
+        background-color: rgb(68, 67, 67);
+
+    }
+
+
+
+    .logo{
+        padding: 1em;
+        font-family: 'Abril Fatface', serif;
+        color: coral;
+    }
+    
+    ul{
+
+        width: 100%;
+        height: 3.20em;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li:nth-of-type(1) {flex-grow: 3;}
+    li:nth-of-type(2) {flex-grow: 1;}
+    li:nth-of-type(3) {flex-grow: 1;}
+    li:nth-of-type(4) {flex-grow: 1;}
+
+
+    .banderole{
+        height: 10em;
+    }
+
+    .container-ourhistory{
+        width: 100%;
+        display: grid;
+        gap: 10px 10px; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas: 
+        "history-text-area  picture-area "
+        ; 
+    }
+
+    .picture-area{
+        grid-area: picture-area;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .img-prez{
+        height: 100%;
+        height: 100%;
+    }
+
+    .container-universe-area{
+        width: 100%;
+        background-color: rgb(252, 250, 248);
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template:
+        "universe-text-area universe-text-area"
+        "img1 img2" ;
+    }
+
+    .universe-text-area {
+        grid-area : universe-text-area ;
+        text-align: left;
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+    }
+    
+    .img1{
+        grid-area : img1 ;
+    }
+    .img2 {
+        grid-area : img2;
+    }
+
+
+
+    .currently-container{
+        padding: 1.2em;
+        width: 100%;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows:  1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+        "currently-text-title currently-text-title currently-text-title"
+        "currently-cards1 currently-cards2 currently-cards3"; 
+    }
+
+    .currently-text-title { 
+        grid-area: currently-text-title;
+        text-align: left;
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+    }
+    .currently-cards1 { grid-area: currently-cards1; }
+    .currently-cards2 { grid-area: currently-cards2; }
+    .currently-cards3 { grid-area: currently-cards3; }
+
+    
+    
+    .hcds-text p {
+        margin: 0 ;
+    }
+    
+
+}
+
+
+
+@media only screen and (min-width : 1440px) {
+ 
+ 
+    header{
+        background-color: rgb(68, 67, 67);
+        display: flex;
+        justify-content: center;
+     
+    }
+
+    nav {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul{
+        width: 100%;
+        height: 3.20em;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li:nth-of-type(1) {flex-grow: 6;}
+    li:nth-of-type(2) {flex-grow: 1;}
+    li:nth-of-type(3) {flex-grow: 1;}
+    li:nth-of-type(4) {flex-grow: 1;}
+
+    .logo{
+        padding: 1em;
+        font-family: 'Abril Fatface', serif;
+        color: coral;
+    }
+    
+    li a {
+        padding: 1em;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+    .banderole{
+        height: 30em;
+    }
+
+    .container-ourhistory{
+        width: 80%;
+        display: grid;
+        gap: 10px 10px; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas: 
+        "history-text-area  picture-area "
+        ;
+ 
+    }
+
+    .picture-area{
+        grid-area: picture-area;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .img-prez{
+        height: 100%;
+    }
+    
+    .container-universe-area{
+        width: 80%;
+        background-color: rgb(252, 250, 248);
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 10px 10px; 
+        grid-template:
+        "universe-text-area universe-text-area"
+        "img1 img2" ;
+    }
+
+    .universe-text-area {
+        grid-area : universe-text-area ;
+        text-align: left;
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+    }
+    
+    .img1{
+        grid-area : img1 ;
+    }
+    .img2 {
+        grid-area : img2;
+    }
+
+    .currently-container{
+        width: 80%;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows:  1fr; 
+        gap: 10px 10px; 
+        grid-template-areas: 
+        "currently-text-title currently-text-title currently-text-title"
+        "currently-cards1 currently-cards2 currently-cards3"; 
+    }
+
+    .currently-text-title { 
+        grid-area: currently-text-title;
+        text-align: left;
+        padding-top: 1.6em;
+        padding-bottom: 1.6em;
+    }
+    .currently-cards1 { grid-area: currently-cards1; }
+    .currently-cards2 { grid-area: currently-cards2; }
+    .currently-cards3 { grid-area: currently-cards3; }
+
+    .hcds-text p {
+        margin: 0 ;
+    }
+    
+
 }
