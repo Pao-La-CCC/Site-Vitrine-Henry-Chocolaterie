@@ -3,7 +3,8 @@ body {
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     font-weight: 200;
-    background-color: rgb(252, 250, 248);
+    
+    
        
 }
 
@@ -71,7 +72,7 @@ p{
 .info-area{
     padding-top: 1.2em ;
     padding-bottom: 1.2em;
-    background-color: rgb(253, 232, 206);
+    background-color: rgb(254, 245, 226); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,9 +133,7 @@ p{
 
 
 
-
 .cds-text{
-    background-color: rgb(247, 244, 244);
     width: 100%; 
 }
 
@@ -278,9 +277,7 @@ footer{
   
 
 
-    .cds-text{
-        background-color: rgb(247, 244, 244);
-    }
+ 
 
     .cds-text p:first-child {
         color: rgb(21, 21, 21);
@@ -432,7 +429,6 @@ footer{
 
 
     .cds-text{
-        background-color: rgb(247, 244, 244);
         width: 100%; 
     }
 
