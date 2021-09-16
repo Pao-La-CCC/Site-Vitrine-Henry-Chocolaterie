@@ -8,61 +8,51 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Archivo Black', sans-serif;
 }
 
+
+
 header{
-    display: flex;
-    justify-content: center;
     background-color: rgb(68, 67, 67);
+    margin: 0 auto;
+    
 }
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 80%;  
-}
+
+
 
 .logo{
+    padding: 1em;
     font-family: 'Abril Fatface', serif;
     color: coral;
-    font-size: 1.6em;
-        
-       
+    text-align: center;
 }
-
 
 ul{
     width: 100%;
-    height: 3.20em;
     margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    list-style: none;
+    padding: 0;
+
 }
-
-
 
 li {
+    
     list-style : none;
-    align-items :stretch;    
+    align-items :stretch;
+    
+    
 }
-
-li:nth-of-type(1) {flex-grow: 6;}
-li:nth-of-type(2) {flex-grow: 1;}
-li:nth-of-type(3) {flex-grow: 1;}
-li:nth-of-type(4) {flex-grow: 1;}
-
 
 
 li a:hover {
     background-color: rgb(26, 25, 25);
     color: white;
 }
-
 li a {
     padding: 1em;
     color: white;
     text-decoration: none;
-    display: block;  
+    display: block;
+    
 }
+
 
 /* MAIN */
 
@@ -234,4 +224,105 @@ button{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 650px) and (max-width : 1999px) {
+
+
+    
+    header{
+        background-color: rgb(68, 67, 67); 
+    }
+
+    nav{
+        background-color: rgb(68, 67, 67);
+
+    }
+
+
+
+    .logo{
+        padding: 1em;
+        font-family: 'Abril Fatface', serif;
+        color: coral;
+    }
+    
+    ul{
+
+        width: 100%;
+        height: 3.20em;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li:nth-of-type(1) {flex-grow: 3;}
+    li:nth-of-type(2) {flex-grow: 1;}
+    li:nth-of-type(3) {flex-grow: 1;}
+    li:nth-of-type(4) {flex-grow: 1;}
+
+
+  
+
+    
+
+}
+
+
+
+@media only screen and (min-width : 1440px) {
+ 
+ 
+    header{
+        background-color: rgb(68, 67, 67);
+        display: flex;
+        justify-content: center;
+     
+    }
+
+    nav {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul{
+        width: 100%;
+        height: 3.20em;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    li:nth-of-type(1) {flex-grow: 6;}
+    li:nth-of-type(2) {flex-grow: 1;}
+    li:nth-of-type(3) {flex-grow: 1;}
+    li:nth-of-type(4) {flex-grow: 1;}
+
+    .logo{
+        padding: 1em;
+        font-family: 'Abril Fatface', serif;
+        color: coral;
+    }
+    
+    li a {
+        padding: 1em;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+
+  
+  
+    
+
 }
