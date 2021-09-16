@@ -343,6 +343,7 @@ footer{
         padding: 1em;
         font-family: 'Abril Fatface', serif;
         color: coral;
+        text-align: left;
     }
     
     li a {

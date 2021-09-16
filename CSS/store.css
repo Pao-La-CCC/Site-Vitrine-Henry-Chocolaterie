@@ -80,7 +80,8 @@ p{
 }
 
 .info-container{
-    width: 80%;
+    width: 100%;
+    margin-left: 2em;
     
 }
 
@@ -103,37 +104,25 @@ p{
 
 
 .img-fit-div{
-    width: 360px;
-    height:330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
 }
 
-.img-fit-div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .container {
-    padding-top: 2.5em;
-    width: 80%;
+    padding: 2em;
+    width: 100%;
     height: auto;
-    display: grid;
-    align-items: end;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 0px;
-    grid-template-areas:
-      "store-cards1 store-cards2 store-cards3" 
-      "store-cards4 store-cards5 store-cards6"
-      "store-cards7 store-cards8 ."     ;
+   
 }
 
 
 
 .store-cards{
-    margin: 0 auto;
-    height: auto;
-    width: 360px;
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -143,25 +132,8 @@ p{
 
 
 
-.store-cards1 { grid-area: store-cards1;}
-
-.store-cards2 { grid-area: store-cards2; }
-
-.store-cards3 { grid-area: store-cards3; }
-
-.store-cards4 { grid-area: store-cards4; }
-
-.store-cards5 { grid-area: store-cards5; }
-
-.store-cards6 { grid-area: store-cards6; }
-
-.store-cards7 { grid-area: store-cards7; }
-
-.store-cards8 { grid-area: store-cards8; }
-
 
 .cds-text{
-    height: 200px;
     background-color: rgb(247, 244, 244);
     width: 100%; 
 }
@@ -189,6 +161,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .divPara p:first-child{
@@ -207,11 +180,14 @@ p{
 
 }
 
+footer{
+    height: 3em;
+    background-color: rgb(68, 67, 67);
+}
 
 
 
-
-@media only screen and (min-width: 650px) and (max-width : 1999px) {
+@media only screen and (min-width: 750px) and (max-width : 1000px) {
 
 
     
@@ -230,6 +206,7 @@ p{
         padding: 1em;
         font-family: 'Abril Fatface', serif;
         color: coral;
+        text-align: left;
     }
     
     ul{
@@ -249,13 +226,110 @@ p{
     li:nth-of-type(4) {flex-grow: 1;}
 
 
+
+    .img-fit-div{
+        height: 280px;
+        width: 100%;
+    }
+
+    .img-fit-div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container {
+        padding: 1em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 30px 15px;
+        grid-template-areas:
+        "store-cards1 store-cards2"
+        "store-cards3 store-cards4" 
+        "store-cards5 store-cards6"
+        "store-cards7 store-cards8"     ;
+    }
+
+      
+    .store-cards1 { grid-area: store-cards1;}
+
+    .store-cards2 { grid-area: store-cards2; }
+
+    .store-cards3 { grid-area: store-cards3; }
+
+    .store-cards4 { grid-area: store-cards4; }
+
+    .store-cards5 { grid-area: store-cards5; }
+
+    .store-cards6 { grid-area: store-cards6; }
+
+    .store-cards7 { grid-area: store-cards7; }
+
+    .store-cards8 { grid-area: store-cards8; }
+
+
+    .store-cards{
+
+    box-shadow: 1px 1px 20px rgb(221, 216, 216);
+
+    }
+  
+
+
+    .cds-text{
+        background-color: rgb(247, 244, 244);
+    }
+
+    .cds-text p:first-child {
+        color: rgb(21, 21, 21);
+        text-align: left;
+        font-size: large;
+
+    }
+
+    .cds-text p:nth-child(2) {
+        color: rgb(156, 156, 156); 
+        font-size: 0.95em; 
+        text-align: left;
+    }
+
+    .cds-text p:nth-child(3)  {
+        color: rgb(87, 152, 70); 
+        text-align: left;
+    }
+
+
+    .divPara{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divPara p:first-child{
+        background-color: rgb(238, 238, 237);
+        display: inline-flex;
+        padding: 5px 40px 5px;
+        border: 0.12em solid;
+        border-radius: 70px;
+        
+    }
+
+    .divPara p:first-child:hover{
+        background-color:  rgb(46, 45, 45);
+        color: rgb(244, 235, 235);
+        border: 0.12em solid  black;
+
+    }
+
+
   
 
     
 
 }
-
-
+/* Grand écran */
 
 @media only screen and (min-width : 1440px) {
  
@@ -292,6 +366,7 @@ p{
         padding: 1em;
         font-family: 'Abril Fatface', serif;
         color: coral;
+        text-align: left;
     }
     
     li a {
@@ -301,7 +376,108 @@ p{
         display: block;
     }
 
-  
+    .info-container{
+        width: 80%;
+        
+    }
+
+
+
+    .img-fit-div{
+        width: 360px;
+        height:330px;
+    }
+
+    .img-fit-div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container {
+        padding-top: 2.5em;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 0px;
+        grid-template-areas:
+        "store-cards1 store-cards2 store-cards3" 
+        "store-cards4 store-cards5 store-cards6"
+        "store-cards7 store-cards8 ."     ;
+    }
+
+    .store-cards{
+        width: 360px;
+        box-shadow: 1px 1px 20px rgb(221, 216, 216);
+    
+    }
+
+       
+    .store-cards1 { grid-area: store-cards1;}
+
+    .store-cards2 { grid-area: store-cards2; }
+
+    .store-cards3 { grid-area: store-cards3; }
+
+    .store-cards4 { grid-area: store-cards4; }
+
+    .store-cards5 { grid-area: store-cards5; }
+
+    .store-cards6 { grid-area: store-cards6; }
+
+    .store-cards7 { grid-area: store-cards7; }
+
+    .store-cards8 { grid-area: store-cards8; }
+
+
+    .cds-text{
+        background-color: rgb(247, 244, 244);
+        width: 100%; 
+    }
+
+    .cds-text p:first-child {
+        color: rgb(21, 21, 21);
+        text-align: left;
+        font-size: large;
+
+    }
+
+    .cds-text p:nth-child(2) {
+        color: rgb(156, 156, 156); 
+        font-size: 0.95em; 
+        text-align: left;
+    }
+
+    .cds-text p:nth-child(3)  {
+        color: rgb(87, 152, 70); 
+        text-align: left;
+    }
+
+
+    .divPara{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divPara p:first-child{
+        background-color: rgb(238, 238, 237);
+        display: inline-flex;
+        padding: 5px 40px 5px;
+        border: 0.12em solid;
+        border-radius: 70px;
+        
+    }
+
+    .divPara p:first-child:hover{
+        background-color:  rgb(46, 45, 45);
+        color: rgb(244, 235, 235);
+        border: 0.12em solid  black;
+
+    }
+
+        
   
     
 
