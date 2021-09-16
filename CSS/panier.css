@@ -23,6 +23,7 @@ header{
     padding: 1em;
     font-family: 'Abril Fatface', serif;
     color: coral;
+    text-align : center;
 
 }
 
@@ -253,6 +254,14 @@ button{
         flex-flow: row wrap;
         justify-content: flex-end;
         list-style: none;
+    }
+    
+    .logo{
+    padding: 1em;
+    font-family: 'Abril Fatface', serif;
+    color: coral;
+    text-align : center;
+
     }
 
     li:nth-of-type(1) {flex-grow: 3;}
